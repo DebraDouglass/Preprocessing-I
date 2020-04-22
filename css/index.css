@@ -134,3 +134,50 @@ html,
 body {
   height: 100%;
 }
+.font-arial-large {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: black;
+}
+.font-arial-medium {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+.font-arial-smallest {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  color: black;
+}
+.wrapper {
+  width: 100%;
+  margin: 2rem auto;
+  border: 0.02rem solid red;
+}
+.wrapper .home-nav {
+  display: flex;
+  justify-content: flex-end;
+  border: 0.02rem solid red;
+}
+.wrapper a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  color: black;
+  padding: 0.5rem;
+  color: slategrey;
+  text-decoration: none;
+  border: 0.02rem solid red;
+}
+.wrapper .header-intro {
+  border: 0.02rem solid red;
+}
+.wrapper .header-intro .intro-selfie img {
+  width: 15rem;
+  height: 15rem;
+  border: 0.02rem solid orange;
+}
+.wrapper .header-intro h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: black;
+}

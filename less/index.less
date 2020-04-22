@@ -59,5 +59,80 @@ html, body {
 
 
 
-// MY CODE STARTS HERE //
+// MY CODE STARTS HERE ------------------------------------------------//
 
+// VARIABLES //
+
+@border-red: .02rem solid red;
+@border-black: .02rem solid black;
+@border-orange: .02rem solid orange;
+
+@font-black: black;
+@font-slate: slategrey;
+
+@bkgrd-lt-grey: lightgrey;
+@bkgrd-dk-grey: darkgrey;
+@bkgrd-white: white;
+
+// MIXINS -------------------------------------------------------------------------------------------//
+
+// .font-18-center {
+// 	color: black;
+// 	font-size: 18rem;
+// 	text-align: center;
+//   }
+
+  .font-arial-large {
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-size: 2rem;
+	  color: @font-black;
+  }
+
+  .font-arial-medium {
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-size: 1rem;
+	  color: @font-black;
+  }
+
+  .font-arial-smallest {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.7rem;
+	color: @font-black;
+  }
+
+  // ================================================================================================
+
+.wrapper {
+	width: 100%;
+	margin: 2rem auto;
+	border: @border-red;
+
+	.home-nav {
+		display: flex;
+		justify-content: flex-end;
+		border: @border-red;
+		} // end .home-nav 
+
+		a {
+			.font-arial-smallest();
+			padding: .5rem;
+			color: @font-slate;
+			text-decoration: none;
+			border: @border-red;
+		} // end a
+
+	.header-intro {
+		border: @border-red;
+
+		.intro-selfie img {
+			width: 15rem;
+			height: 15rem;
+			border: @border-orange;
+		}
+
+		h1 {
+			.font-arial-large();
+		}
+
+	} // end .header-intro
+} // end .wrapper
