@@ -134,9 +134,14 @@ html,
 body {
   height: 100%;
 }
-.font-arial-large {
+.font-arial-largest {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
+  color: black;
+}
+.font-arial-large {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
   color: black;
 }
 .font-arial-medium {
@@ -154,15 +159,18 @@ body {
   font-size: 0.5rem;
   color: black;
 }
+.font-arial-tiny {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.25rem;
+  color: black;
+}
 .wrapper {
   width: 100%;
   margin: 1rem auto;
-  border: 0.025rem dashed red;
 }
 .wrapper .home-nav {
   display: flex;
   justify-content: flex-end;
-  border: 0.025rem dashed red;
 }
 .wrapper a {
   font-family: Arial, Helvetica, sans-serif;
@@ -171,42 +179,67 @@ body {
   padding: 0.5rem;
   color: slategrey;
   text-decoration: none;
-  border: 0.025rem dashed red;
 }
 .wrapper .header-intro {
-  background-color: grey;
-  border: 0.025rem dashed red;
+  margin-bottom: 1rem;
+  padding-bottom: 3rem;
+  background-color: lightgrey;
 }
 .wrapper .header-intro .header-selfie img {
   width: 15rem;
   height: 100%;
   padding: 1rem;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
   border: 0.025rem dashed black;
 }
 .wrapper .header-intro .header-name p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
   color: black;
-  padding-left: 0.25rem;
+  padding-left: 1.5rem;
 }
 .wrapper .header-intro .header-subtitle p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   color: black;
-  padding: 0.75rem 0 0.75rem 0.25rem;
+  padding: 0.75rem 1.5rem;
 }
 .wrapper .header-intro .header-text p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.75rem;
   color: black;
-  padding-left: 0.25rem;
-  padding-bottom: 0.75rem;
+  padding: 0.75rem 1.5rem;
 }
-.wrapper .header-intro .header-button p {
+.wrapper .header-intro .header-button button {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   color: black;
-  padding-left: 0.25rem;
-  padding-bottom: 0.75rem;
+  padding: 0.25rem;
+  margin-left: 1.5rem;
+  border-radius: 0.3rem;
+  background-color: darkgrey;
   border: 0.025rem dashed black;
+}
+.wrapper .header-intro .header-button button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.wrapper .middle-content {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .middle-content .blog-home {
+  padding: 0.75rem 1.5rem;
+  border: 0.025rem dashed red;
+}
+.wrapper .middle-content .blog-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  padding-bottom: 0.5rem;
+}
+.wrapper .middle-content .blog-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  color: black;
 }
