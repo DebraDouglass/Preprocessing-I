@@ -144,40 +144,69 @@ body {
   font-size: 1rem;
   color: black;
 }
+.font-arial-small {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  color: black;
+}
 .font-arial-smallest {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   color: black;
 }
 .wrapper {
   width: 100%;
-  margin: 2rem auto;
-  border: 0.02rem solid red;
+  margin: 1rem auto;
+  border: 0.025rem dashed red;
 }
 .wrapper .home-nav {
   display: flex;
   justify-content: flex-end;
-  border: 0.02rem solid red;
+  border: 0.025rem dashed red;
 }
 .wrapper a {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   color: black;
   padding: 0.5rem;
   color: slategrey;
   text-decoration: none;
-  border: 0.02rem solid red;
+  border: 0.025rem dashed red;
 }
 .wrapper .header-intro {
-  border: 0.02rem solid red;
+  background-color: grey;
+  border: 0.025rem dashed red;
 }
-.wrapper .header-intro .intro-selfie img {
+.wrapper .header-intro .header-selfie img {
   width: 15rem;
-  height: 15rem;
-  border: 0.02rem solid orange;
+  height: 100%;
+  padding: 1rem;
+  border: 0.025rem dashed black;
 }
-.wrapper .header-intro h1 {
+.wrapper .header-intro .header-name p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
   color: black;
+  padding-left: 0.25rem;
+}
+.wrapper .header-intro .header-subtitle p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: black;
+  padding: 0.75rem 0 0.75rem 0.25rem;
+}
+.wrapper .header-intro .header-text p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  color: black;
+  padding-left: 0.25rem;
+  padding-bottom: 0.75rem;
+}
+.wrapper .header-intro .header-button p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: black;
+  padding-left: 0.25rem;
+  padding-bottom: 0.75rem;
+  border: 0.025rem dashed black;
 }

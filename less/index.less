@@ -50,7 +50,7 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
@@ -60,27 +60,21 @@ html, body {
 
 
 // MY CODE STARTS HERE ------------------------------------------------//
+// VARIABLES ----------------------------------------------------------//
 
-// VARIABLES //
-
-@border-red: .02rem solid red;
-@border-black: .02rem solid black;
-@border-orange: .02rem solid orange;
+@border-red: .025rem dashed red;
+@border-black: .025rem dashed black;
+@border-orange: .025rem dashed orange;
 
 @font-black: black;
-@font-slate: slategrey;
+@font-lightgrey: lightgrey;
+@font-slategrey: slategrey;
 
 @bkgrd-lt-grey: lightgrey;
 @bkgrd-dk-grey: darkgrey;
 @bkgrd-white: white;
 
 // MIXINS -------------------------------------------------------------------------------------------//
-
-// .font-18-center {
-// 	color: black;
-// 	font-size: 18rem;
-// 	text-align: center;
-//   }
 
   .font-arial-large {
 	  font-family: Arial, Helvetica, sans-serif;
@@ -94,9 +88,15 @@ html, body {
 	  color: @font-black;
   }
 
+  .font-arial-small {
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-size: 0.75rem;
+	  color: @font-black;
+  }
+
   .font-arial-smallest {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 0.7rem;
+	font-size: 0.5rem;
 	color: @font-black;
   }
 
@@ -104,7 +104,7 @@ html, body {
 
 .wrapper {
 	width: 100%;
-	margin: 2rem auto;
+	margin: 1rem auto;
 	border: @border-red;
 
 	.home-nav {
@@ -114,24 +114,45 @@ html, body {
 		} // end .home-nav 
 
 		a {
-			.font-arial-smallest();
+			.font-arial-small();
 			padding: .5rem;
-			color: @font-slate;
+			color: @font-slategrey;
 			text-decoration: none;
 			border: @border-red;
 		} // end a
 
 	.header-intro {
+		background-color: grey;
 		border: @border-red;
 
-		.intro-selfie img {
+		.header-selfie img {
 			width: 15rem;
-			height: 15rem;
-			border: @border-orange;
-		}
+			height: 100%;
+			padding: 1rem;
+			border: @border-black;
+			}
 
-		h1 {
+		.header-name p {
 			.font-arial-large();
+			padding-left: .25rem;
+			}
+
+		.header-subtitle p {
+			.font-arial-medium();
+			padding: .75rem 0 .75rem .25rem;
+			}
+
+		.header-text p {
+			.font-arial-small();
+			padding-left: .25rem;
+			padding-bottom: .75rem;
+			}
+
+	.header-button p {
+		.font-arial-medium;
+			padding-left: .25rem;
+			padding-bottom: .75rem;
+			border: @border-black;
 		}
 
 	} // end .header-intro
