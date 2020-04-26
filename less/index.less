@@ -1,4 +1,3 @@
-// Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -48,15 +47,9 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
 }
-
-html, body {
-    height: 100%;
-}
-
 
 // CODE STARTS HERE ------------------------------------------------//
 // VARIABLES ----------------------------------------------------------//
@@ -64,10 +57,9 @@ html, body {
 @border-red: .025rem dashed red;
 @border-black: .025rem dashed black;
 @border-orange: .025rem dashed orange;
+@border-lt-grey: .025rem solid lightgrey;
 
-@font-black: black;
-@font-lightgrey: lightgrey;
-@font-slategrey: slategrey;
+@font-family: Arial, Helvetica, sans-serif;
 
 @bkgrd-lt-grey: lightgrey;
 @bkgrd-dk-grey: darkgrey;
@@ -116,6 +108,7 @@ html, body {
 
 .wrapper {
 	width: 100%;
+	padding: 1rem;
 	margin: 1rem auto;
 	// border: @border-red;
 
@@ -127,7 +120,8 @@ html, body {
 
 		a {
 			.font-arial-small();
-			padding: .5rem;
+			padding-left: .5rem;
+			padding-bottom: .5rem;
 			color: @font-slategrey;
 			text-decoration: none;
 			// border: @border-red;
@@ -150,6 +144,7 @@ html, body {
 
 		.header-name p {
 			.font-arial-largest();
+			padding-top: .5rem;
 			padding-left: 1.5rem;
 			}
 
@@ -181,22 +176,66 @@ html, body {
 
 	.middle-content {
 		display: flex;
+		width: 100%;
 		justify-content: space-between;
 		
 		.blog-home {
-			padding: .75rem 1.5rem;
+			width: 50%;
+			// padding-left: 1.5rem;
 			border: @border-red;
 		}
 
 		.blog-title {
 			.font-arial-large();
-			padding-bottom: .5rem;
 		}
 
 		.blog-text {
+			line-height: 1rem;
+			padding-top: .5rem;
 			.font-arial-small();
 		}
-		
+	
+		.talent-right {
+			width: 50%;
+			padding-left: 1.5rem;
+			// border: @border-red;
+		}
+
+		.talent-title {
+			.font-arial-medium();
+		}
+
+		ul {
+			.font-arial-small();
+		}
+
+		li {
+			width: auto;
+			padding: .5rem 0rem .5rem 1rem;
+			border: @border-lt-grey
+		}
 	} // end middle-content
+
+	.title-wrk-title {
+		.font-arial-large();
+	}
+
+
+	table {
+		font-family: Arial, Helvetica, sans-serif;
+		border-collapse: collapse;
+		border-spacing: 0;
+		width: 100%;
+	}
+	
+	td, th {
+		border: @border-lt-grey;
+		text-align: left;
+		padding: .8rem;
+	}
+	
+	tr:nth-child(even) {
+		background-color: @bkgrd-lt-grey;
+	}
 
 } // end .wrapper
