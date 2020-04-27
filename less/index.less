@@ -51,13 +51,16 @@ table {
 	box-sizing: border-box;
 }
 
-// CODE STARTS HERE ------------------------------------------------//
+// CODE STARTS HERE ---------------------------------------------------------------------------------//
 // VARIABLES ----------------------------------------------------------//
 
 @border-red: .025rem dashed red;
 @border-black: .025rem dashed black;
 @border-orange: .025rem dashed orange;
 @border-lt-grey: .025rem solid lightgrey;
+
+@color-black: black;
+@color-slategrey: slategrey;
 
 @font-family: Arial, Helvetica, sans-serif;
 
@@ -70,41 +73,34 @@ table {
   .font-arial-largest {
 	  font-family: Arial, Helvetica, sans-serif;
 	  font-size: 2rem;
-	  color: @font-black;
   }
 
   .font-arial-large {
 	  font-family: Arial, Helvetica, sans-serif;
 	  font-size: 1.5rem;
-	  color: @font-black;
   }
 
   .font-arial-medium {
 	  font-family: Arial, Helvetica, sans-serif;
-	  font-size: 1rem;
-	  color: @font-black;
+	  font-size: 1.25rem;
   }
 
   .font-arial-small {
 	  font-family: Arial, Helvetica, sans-serif;
 	  font-size: 0.75rem;
-	  color: @font-black;
   }
 
   .font-arial-smallest {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 0.5rem;
-	color: @font-black;
   }
 
   .font-arial-tiny {
 	  font-family: Arial, Helvetica, sans-serif;
 	  font-size: 0.25rem;
-	  color: @font-black;
   }
 
   // ================================================================================================
-
 
 .wrapper {
 	width: 100%;
@@ -120,9 +116,9 @@ table {
 
 		a {
 			.font-arial-small();
+			color: @bkgrd-dk-grey;
 			padding-left: .5rem;
 			padding-bottom: .5rem;
-			color: @font-slategrey;
 			text-decoration: none;
 			// border: @border-red;
 		} // end a
@@ -182,7 +178,7 @@ table {
 		.blog-home {
 			width: 50%;
 			// padding-left: 1.5rem;
-			border: @border-red;
+			// border: @border-red;
 		}
 
 		.blog-title {
@@ -216,10 +212,10 @@ table {
 		}
 	} // end middle-content
 
-	.title-wrk-title {
-		.font-arial-large();
+	.table-wrk-title {
+		.font-arial-medium();
+		padding: 1.5rem 0 1rem 0;
 	}
-
 
 	table {
 		font-family: Arial, Helvetica, sans-serif;
@@ -236,6 +232,21 @@ table {
 	
 	tr:nth-child(even) {
 		background-color: @bkgrd-lt-grey;
+	}
+
+	.home-footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 2rem;
+		background-color: @bkgrd-dk-grey;
+	}
+
+	.home-footer .copyright {
+		.font-arial-small;
+		padding: 1.5rem 0 3rem ;
+		color: white;
+
 	}
 
 } // end .wrapper
